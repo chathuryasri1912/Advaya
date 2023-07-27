@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Access Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <nav>
+        <div class="logo">ADVAYA - Hospital Access Portal</div>
+        <div class="links">
+            <a id="dashBtn" href="#dashboard">Dashboard</a>
+            <a id="profileBtn" href="#profile">Profile</a>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+</header>
+<body>
+    
+    
+    <section>
+       
+        <section id="authentication" style="display: none;">
+            <!-- Authentication form with options for email/phone number login -->
+            <h1> Welcome to Advaya!!!!</h1>
+            
+            
+            <!-- Add your authentication content here -->
+        </section>
+        <section id="profile" style="display: none;">
+            <div class="login-container">
+                <h5>Login</h5>
+                <form onsubmit="return loginUser()">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="Login">
+                </form>
+                <p id="loginStatus"></p>
+            </div>
+
+
+            <!-- Profile page for the logged-in user -->
+            <!-- Add your profile content here -->
+        </section>
+        <section id="dashboard" style="display: none;">
+            <h2>Services:</h2>
+                <ul>Appointments</ul>
+                <ul>Nearby Hospitals</ul>
+                <ul>Medicines</ul>
+            <!-- Dashboard displaying hospital and doctor information -->
+            <!-- Add your dashboard content here -->
+        </section>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+<footer>
+    <!-- Footer content -->
+    <h3>For Emergency Contact:
+    </h3>
+    <p>080-2154 6571 <br>
+        advayaservices@gmail.com
+    </p>
+</footer>
+</html>
